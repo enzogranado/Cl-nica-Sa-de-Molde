@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com o Studio Deise Lash em Santo André - SP. Envie uma mensagem ou veja nossa localização e horários.">
+  <title>Contato | Studio Deise Lash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- FIXED NAVBAR -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo" id="nav-logo">
+        Studio Deise <span class="logo-accent">Lash</span>
+      </a>
+      
+      <button class="hamburger" aria-label="Abrir menu de navegação" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navigation-menu">
+        <a href="index.html">Home</a>
+        <a href="quemsomos.html">Quem Somos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html" class="active">Contato</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="https://wa.me/5511985849097" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="btn-whatsapp-header">
+          <svg viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.85-4.417 9.854-9.848.002-2.63-1.023-5.101-2.884-6.963C17.167 1.98 14.698.96 12.007.96c-5.434 0-9.856 4.417-9.86 9.85-.001 1.942.5 3.826 1.454 5.441L2.64 19.986l6.007-1.576zM17.91 14.88c-.32-.16-1.89-.93-2.185-1.04-.3-.11-.515-.16-.73.16-.215.32-.83 1.04-1.02 1.25-.185.215-.37.24-.69.08-1.356-.679-2.42-1.22-3.23-2.616-.215-.37-.02-.57.175-.765.175-.175.39-.455.585-.685.195-.23.26-.39.39-.65.13-.26.065-.485-.035-.685-.1-.2-1.39-3.34-1.9-4.57-.496-1.196-1.002-1.185-1.39-1.205-.295-.015-.63-.02-.97-.02-.34 0-.895.13-1.36.65-.465.52-1.77 1.73-1.77 4.22 0 2.49 1.815 4.89 2.065 5.23.25.34 3.575 5.46 8.655 7.65 1.21.52 2.15.83 2.88 1.06 1.21.38 2.31.33 3.18.2 1 .15 2.185-.61 2.485-1.18.3-.57.3-1.07.21-1.18-.09-.11-.33-.27-.65-.43z"/>
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <div class="hero-section" id="hero-banner"></div>
+
+  <!-- SEÇÃO DE CONTATO (FORMULÁRIO E INFORMAÇÕES) -->
+  <section id="contato-info">
+    <div class="section-container">
+      <div class="split-layout align-top reveal">
+        
+        <!-- Formulário -->
+        <div class="form-container">
+          <h2 class="form-title">ESCREVA PARA NÓS</h2>
+          <p class="form-subtitle">
+            Seu feedback é muito importante! Deixe sua mensagem, crítica, sugestão ou elogio. Entraremos em contato.
+          </p>
+          
+          <form id="contact-form" onsubmit="event.preventDefault(); handleFormSubmit();">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fname">Nome</label>
+                <input type="text" id="fname" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="lname">Sobrenome</label>
+                <input type="text" id="lname" class="form-control" required>
+              </div>
+              <div class="form-group form-full-width">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" class="form-control" required>
+              </div>
+              <div class="form-group form-full-width">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" class="form-control" required>
+              </div>
+              <div class="form-group form-full-width">
+                <label for="message">Escreva aqui sua mensagem</label>
+                <textarea id="message" class="form-control" required></textarea>
+              </div>
+              <div class="form-full-width">
+                <button type="submit" class="btn btn-primary" id="btn-submit-form">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Informações -->
+        <div class="contact-info-wrap">
+          <!-- Telefone -->
+          <div class="contact-info-block">
+            <span class="contact-info-label">Telefone / WhatsApp</span>
+            <div class="contact-info-value">
+              <a href="https://wa.me/5511985849097" target="_blank" rel="noopener noreferrer">(11) 98584-9097</a>
+            </div>
+          </div>
+
+          <!-- Redes Sociais -->
+          <div class="contact-info-block">
+            <span class="contact-info-label">Redes Sociais</span>
+            <div class="contact-social-icons">
+              <a href="https://wa.me/5511985849097" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.85-4.417 9.854-9.848.002-2.63-1.023-5.101-2.884-6.963C17.167 1.98 14.698.96 12.007.96c-5.434 0-9.856 4.417-9.86 9.85-.001 1.942.5 3.826 1.454 5.441L2.64 19.986l6.007-1.576zM17.91 14.88c-.32-.16-1.89-.93-2.185-1.04-.3-.11-.515-.16-.73.16-.215.32-.83 1.04-1.02 1.25-.185.215-.37.24-.69.08-1.356-.679-2.42-1.22-3.23-2.616-.215-.37-.02-.57.175-.765.175-.175.39-.455.585-.685.195-.23.26-.39.39-.65.13-.26.065-.485-.035-.685-.1-.2-1.39-3.34-1.9-4.57-.496-1.196-1.002-1.185-1.39-1.205-.295-.015-.63-.02-.97-.02-.34 0-.895.13-1.36.65-.465.52-1.77 1.73-1.77 4.22 0 2.49 1.815 4.89 2.065 5.23.25.34 3.575 5.46 8.655 7.65 1.21.52 2.15.83 2.88 1.06 1.21.38 2.31.33 3.18.2 1 .15 2.185-.61 2.485-1.18.3-.57.3-1.07.21-1.18-.09-.11-.33-.27-.65-.43z"/>
+                </svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="Instagram">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                </svg>
+              </a>
+              <a href="https://linktr.ee" target="_blank" rel="noopener noreferrer" class="contact-social-btn" aria-label="Linktree">
+                <svg viewBox="0 0 24 24">
+                  <path d="M13.75 22h-3.5a.75.75 0 01-.75-.75V15h5v6.25a.75.75 0 01-.75.75zm-1.75-8.5C9.5 13.5 6 11.5 6 8.5c0-1.8 1.2-3.2 3.5-3.8V3.5a2.5 2.5 0 015 0v1.2c2.3.6 3.5 2 3.5 3.8 0 3-3.5 5-6 5zm0-8.5c-1.38 0-2.5 1.12-2.5 2.5 0 .8 1.1 1.8 2.5 2.5 1.4-.7 2.5-1.7 2.5-2.5 0-1.38-1.12-2.5-2.5-2.5z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Endereço -->
+          <div class="contact-info-block">
+            <span class="contact-info-label">Endereço</span>
+            <div class="contact-info-value" style="line-height: 1.8;">
+              Rua Araguaia, 790<br>
+              Vila Curuçá — Santo André / SP<br>
+              CEP 09291-100
+            </div>
+          </div>
+
+          <!-- Horário de Funcionamento -->
+          <div class="contact-info-block">
+            <span class="contact-info-label">Horário de Funcionamento</span>
+            <div class="contact-info-value">
+              Consulte disponibilidade pelo WhatsApp
+            </div>
+          </div>
+
+          <!-- Avalie o Google -->
+          <div class="contact-info-block">
+            <span class="contact-info-label">Avalie o Studio Deise Lash no Google</span>
+            <a href="https://maps.google.com/?q=R.+Araguaia,+790+-+Vila+Curu%C3%A7%C3%A1,+Santo+Andr%C3%A9+-+SP" target="_blank" rel="noopener noreferrer" class="btn btn-accent google-eval-btn" id="btn-maps-google-eval">
+              Avaliar no Google
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA DO GOOGLE (IFRAME) -->
+  <section class="map-section reveal" id="secao-mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.4697960721734!2d-46.545759724666455!3d-23.641215478747427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42ebcfbd53a3%3A0xc3bdf2d7a2249e0c!2sR.%20Araguaia%2C%20790%20-%20Vila%20Curu%C3%A7%C3%A1%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009290-120!5e0!3m2!1spt-BR!2sbr!4v1718700000000!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização do Studio Deise Lash no Google Maps"></iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <div class="footer-logo">
+          Studio Deise <span class="logo-accent">Lash</span>
+        </div>
+        <p>
+          Experiência VIP em cílios e sobrancelhas em Santo André - SP. Cuidado artesanal para realçar o seu olhar.
+        </p>
+      </div>
+
+      <div>
+        <span class="footer-title">Links Rápidos</span>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quemsomos.html">Quem Somos</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="footer-social-title">Redes Sociais</span>
+        <div class="footer-social-icons">
+          <a href="https://wa.me/5511985849097" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.85-4.417 9.854-9.848.002-2.63-1.023-5.101-2.884-6.963C17.167 1.98 14.698.96 12.007.96c-5.434 0-9.856 4.417-9.86 9.85-.001 1.942.5 3.826 1.454 5.441L2.64 19.986l6.007-1.576zM17.91 14.88c-.32-.16-1.89-.93-2.185-1.04-.3-.11-.515-.16-.73.16-.215.32-.83 1.04-1.02 1.25-.185.215-.37.24-.69.08-1.356-.679-2.42-1.22-3.23-2.616-.215-.37-.02-.57.175-.765.175-.175.39-.455.585-.685.195-.23.26-.39.39-.65.13-.26.065-.485-.035-.685-.1-.2-1.39-3.34-1.9-4.57-.496-1.196-1.002-1.185-1.39-1.205-.295-.015-.63-.02-.97-.02-.34 0-.895.13-1.36.65-.465.52-1.77 1.73-1.77 4.22 0 2.49 1.815 4.89 2.065 5.23.25.34 3.575 5.46 8.655 7.65 1.21.52 2.15.83 2.88 1.06 1.21.38 2.31.33 3.18.2 1 .15 2.185-.61 2.485-1.18.3-.57.3-1.07.21-1.18-.09-.11-.33-.27-.65-.43z"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+          <a href="https://linktr.ee" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Linktree">
+            <svg viewBox="0 0 24 24">
+              <path d="M13.75 22h-3.5a.75.75 0 01-.75-.75V15h5v6.25a.75.75 0 01-.75.75zm-1.75-8.5C9.5 13.5 6 11.5 6 8.5c0-1.8 1.2-3.2 3.5-3.8V3.5a2.5 2.5 0 015 0v1.2c2.3.6 3.5 2 3.5 3.8 0 3-3.5 5-6 5zm0-8.5c-1.38 0-2.5 1.12-2.5 2.5 0 .8 1.1 1.8 2.5 2.5 1.4-.7 2.5-1.7 2.5-2.5 0-1.38-1.12-2.5-2.5-2.5z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        &copy; 2025 por Studio Deise Lash. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Local interactive function for visual feedback upon form submission
+    function handleFormSubmit() {
+      const btn = document.getElementById('btn-submit-form');
+      const form = document.getElementById('contact-form');
+      
+      btn.style.backgroundColor = '#25D366';
+      btn.style.borderColor = '#25D366';
+      btn.textContent = 'Enviado!';
+      btn.disabled = true;
+      
+      setTimeout(() => {
+        form.reset();
+        btn.style.backgroundColor = '';
+        btn.style.borderColor = '';
+        btn.textContent = 'Enviar';
+        btn.disabled = false;
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
